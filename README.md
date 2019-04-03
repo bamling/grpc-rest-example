@@ -77,7 +77,7 @@ go build ./cmd/grpc-client
 
 ## Running the example
 
-To start the `server`, execute the following:
+To start the `server` execute the following:
 
 ```bash
 ./server
