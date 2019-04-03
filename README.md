@@ -9,7 +9,7 @@ This is a simple *echo* server implementation that returns the requested message
 
 ### Generating protocol buffer sources (docker)
 
-If you have a running [docker](https://www.docker.com/) system you can use the supplied [protoc-gen.sh](http://) script to generate the required [protocol buffers](https://developers.google.com/protocol-buffers/) source files.
+If you have a running [docker](https://www.docker.com/) system you can use the supplied [protoc-gen.sh](https://github.com/bamling/grpc-rest-example/blob/master/scripts/protoc-gen.sh) script to generate the required [protocol buffers](https://developers.google.com/protocol-buffers/) source files.
 
 ```bash
 ./scripts/protoc-gen.sh
