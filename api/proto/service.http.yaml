@@ -1,0 +1,17 @@
+# alternative to adding http options in service.proto
+# generate with:
+#
+#   protoc -I/usr/local/include -I. \
+#     -I$GOPATH/src \
+#     -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+#     --grpc-gateway_out=logtostderr=true,grpc_api_configuration=path/to/your_service.yaml:. \
+#     path/to/your_service.proto
+#
+# current version of the docker image znly/protoc does not seem to have the required libraries
+# so you either need your own image or have protoc installed locally
+
+http:
+  rules:
+  - selector: echo.EchoService.Echo
+    post: /echo
+    body: "*"
